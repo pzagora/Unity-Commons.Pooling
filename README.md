@@ -8,11 +8,16 @@ This package is **not standalone**. Its `Runtime/` carries a `.asmref` pointing 
 
 ## Installation
 
-Add both packages to `Packages/manifest.json`:
+Install from the zagora.dev UPM registry — add the scoped registry (and OpenUPM, for UniTask) to `Packages/manifest.json`, then the package; its dependencies install automatically:
 
 ```json
-"com.zagoradev.unity.commons": "https://github.com/pzagora/Unity-Commons.git",
-"com.zagoradev.unity.commons.pooling": "https://github.com/pzagora/Unity-Commons.Pooling.git"
+"scopedRegistries": [
+    { "name": "zagora.dev", "url": "https://upm.zagora.dev", "scopes": [ "com.zagoradev" ] },
+    { "name": "OpenUPM", "url": "https://package.openupm.com", "scopes": [ "com.cysharp" ] }
+],
+"dependencies": {
+  "com.zagoradev.unity.commons.pooling": "1.0.3"
+}
 ```
 
 Requires Unity `6000.0+`.

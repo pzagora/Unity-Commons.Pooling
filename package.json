@@ -1,7 +1,7 @@
 {
   "name": "com.zagoradev.unity.commons.pooling",
   "displayName": "Unity Commons Pooling (zagora.dev)",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "unity": "6000.0",
   "description": "GenericObjectPool<T> and PoolSettings for Unity Commons. Compiles into the Commons assembly via an assembly definition reference, so it requires Unity Commons.",
   "documentationUrl": "https://github.com/pzagora/Unity-Commons.Pooling/blob/main/README.md",
@@ -20,6 +20,6 @@
     "zagora.dev"
   ],
   "dependencies": {
-    "com.zagoradev.unity.commons": "https://github.com/pzagora/Unity-Commons.git"
+    "com.zagoradev.unity.commons": "2.1.3"
   }
 }
